@@ -1,0 +1,24 @@
+<html>
+    <head>
+        <title>
+            Arguments in Js
+        </title>
+    </head>
+    <body>
+        <p>Finding the Largest number with the help of Argument Objects</p>
+        <p id="result"></p>
+        <script>
+            function findMax(){
+                var i;
+                var max=0;
+                for(i=0; i<arguments.length; i++){
+                    if(arguments[i]>max){
+                        max=arguments[i];
+                    }
+                }
+                return max;
+            }
+            document.getElementById("result").innerHTML=findMax(56,534,88);
+        </script>
+    </body>
+</html>
